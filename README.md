@@ -47,23 +47,31 @@
 | `screenshot.png` | 游戏截图 |
 | `LICENSE` | 代码 MIT；鲸鲸角色与系列名保留 |
 
+## 下载
+
+源码包：
+
+**https://github.com/Feverrrrrr/jingjinggame/archive/refs/heads/main.zip**
+
+下载后解压，双击 `index.html` 即可本地玩。
+
 ## 部署到 GitHub Pages
 
-仓库已带 `.github/workflows/pages.yml`。  
-推送到 `main` 后，Actions 会自动构建并部署。
+当前 Pages 已设置为：
 
-如果 Actions 没有自动启用 Pages：
+```text
+Source: Deploy from a branch
+Branch: main
+Folder: / (root)
+```
 
-1. 打开 `Settings → Pages`；
-2. Source 选 `GitHub Actions`；
-3. 再运行一次 `Deploy GitHub Pages` workflow。
-
+以后只改游戏文件并推送到 `main`，Pages 会自动重建。  
 如果页面 404：
 
 - 确认 `index.html` 在仓库根目录，不在子文件夹；
-- 确认 Pages 发布源是 `GitHub Actions` 或 `main / (root)`；
+- 确认 Pages 发布源是 `main / (root)`；
 - 确认 `.nojekyll` 已上传；
-- 等 Actions 的 `deploy` job 完成。
+- 等 Pages 的部署完成。
 
 ## 许可
 
